@@ -1,0 +1,13 @@
+1. mkdir my-node-project
+2. cd my-node-project
+3. npm init -y
+4. npm install typescript --save-dev
+5. npx tsc --init
+6. Create a src directory to hold your TypeScript files. Inside src, create your TypeScript file, for example, index.ts
+7. npm install ts-node --save-dev
+8. npx ts-node src/app.ts
+9. npm install express @types/express --save
+10. npm install axios
+
+
+
