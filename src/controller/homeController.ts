@@ -14,9 +14,11 @@ export class HomeController {
 
     async getJsonPlaceholder(req: Request, res: Response) {
         try {
+            console.log('hit');
             const data = await this.homeRepo.jsonplaceholder();
             return res.status(200).send(data);
         } catch (error) {
+            console.log('error',error);
             return res.status(500).send(error);
         }
     }

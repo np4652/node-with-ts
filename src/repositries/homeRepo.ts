@@ -7,7 +7,7 @@ export class homeRepo implements IHome {
     async jsonplaceholder() {
         try {
             const response = await axios.get('https://jsonplaceholder.typicode.com/posts/1');
-            return response;
+            return response.data;
         } catch (error) {
             return error
         }
